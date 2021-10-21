@@ -1,0 +1,28 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/notification_layout"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center">
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_notification" />
+
+
+    <TextView
+        android:id="@+id/txt_notification_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|right"
+        android:background="@drawable/circle"
+        android:gravity="top|right"
+        android:paddingLeft="3dp"
+        android:paddingRight="3dp"
+        android:text="0"
+        android:textColor="@color/white_color"
+        android:textSize="@dimen/text_10"
+        android:textStyle="bold" />
+
+</FrameLayout>

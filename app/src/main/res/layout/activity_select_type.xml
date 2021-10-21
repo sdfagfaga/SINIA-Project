@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activites.LoginActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="2">
+
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:background="@mipmap/ic_login_logo"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.7"></LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.3"
+            android:gravity="center|top"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/gelion_regular"
+                android:gravity="center"
+                android:text="@string/are_you"
+                android:textColor="@color/dark_black_color"
+                android:textSize="@dimen/text_24">
+
+            </TextView>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <Button
+                    android:id="@+id/btn_farmer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_unselected"
+                    android:fontFamily="@font/gelion_regular"
+                    android:text="@string/farmer"
+                    android:textAllCaps="false"
+                    android:textColor="@color/dark_black_color"
+                    android:textSize="@dimen/text_18">
+
+                </Button>
+
+                <Button
+                    android:id="@+id/btn_retailer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_unselected"
+                    android:fontFamily="@font/gelion_regular"
+                    android:text="@string/retailer"
+                    android:textAllCaps="false"
+                    android:textColor="@color/dark_black_color"
+                    android:textSize="@dimen/text_18">
+
+                </Button>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <Button
+                    android:id="@+id/btn_buyer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_unselected"
+                    android:fontFamily="@font/gelion_regular"
+                    android:text="@string/buyer"
+                    android:textAllCaps="false"
+                    android:textColor="@color/dark_black_color"
+                    android:textSize="@dimen/text_18">
+
+                </Button>
+
+                <Button
+                    android:id="@+id/btn_shipper"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_unselected"
+                    android:fontFamily="@font/gelion_regular"
+                    android:text="@string/shipper"
+                    android:textAllCaps="false"
+                    android:textColor="@color/dark_black_color"
+                    android:textSize="@dimen/text_18">
+
+                </Button>
+
+            </LinearLayout>
+
+
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

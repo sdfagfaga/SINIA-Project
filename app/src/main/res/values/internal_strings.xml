@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="home_fragment">Home Fragment</string>
+    <string name="buy_sell_fragment">Buy Sell Fragment</string>
+    <string name="products_fragment">Products Fragment</string>
+    <string name="profile_fragment">Profile Fragment</string>
+    <string name="more_fragment">More Fragment</string>
+    <string name="post_a_product_fragment">Post a product Fragment</string>
+    <string name="fragment_product_details">Fragment Product details</string>
+    <string name="fragment_cart_details">Fragment Cart details</string>
+    <string name="fragment_order_summary">Fragment order summary</string>
+    <string name="fragment_shipping">Fragment Shipping</string>
+    <string name="fragment_payment">Fragment Payment</string>
+    <string name="fragment_payment_details">Fragment Payment Details</string>
+    <string name="fragment_buy_sell_product_details">Fragment Buy Sell Product details</string>
+
+
+    <!--Preferences Strings-->
+    <string name="prefs_register_status">Register Status</string>
+    <string name="prefs_country_code">Country Code</string>
+    <string name="prefs_cart_count">Cart Count</string>
+    <string name="prefs_notification_count">Notification Count</string>
+    <string name="prefs_user_name">Prefs User Name</string>
+
+    <string name="add_products_cart">Please add at least on product.</string>
+    <string name="fragment_update_profile">Fragment Update Profile</string>
+    <string name="prefs_news_letter">News Letter</string>
+    <string name="fragment_news_letter">Fragment News Letter</string>
+    <string name="fragment_donate">Fragment Donate</string>
+</resources>

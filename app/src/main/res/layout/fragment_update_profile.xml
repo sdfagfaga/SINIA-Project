@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/arrow_action_layout"
+            layout="@layout/custom_action_with_arrow"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </include>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/background_color"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:orientation="vertical">
+
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="100dp"
+                    android:layout_marginTop="50dp">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/image_profile"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_centerHorizontal="true"
+                        android:src="@drawable/ic_gallery" />
+
+                    <ImageView
+                        android:id="@+id/badge"
+                        android:layout_width="16dp"
+                        android:layout_height="16dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginRight="8dp"
+                        android:layout_marginBottom="6dp"
+                        android:src="@drawable/ic_profile_camera" />
+
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/txt_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/text_24"></TextView>
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/gelion_regular"
+                    android:text="@string/pincode"
+                    android:textColor="@color/dark_black_color"
+                    android:textSize="@dimen/text_18"></TextView>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <EditText
+                        android:id="@+id/edt_pincode"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:background="@drawable/edittext_style"
+                        android:hint="@string/enter"
+                        android:textColor="@color/dark_black_color"
+                        android:textSize="@dimen/text_18"></EditText>
+
+                    <TextView
+                        android:paddingLeft="10dp"
+                        android:id="@+id/txt_use_my_location"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:background="@drawable/button_style_animation"
+                        android:drawableLeft="@drawable/ic_location"
+                        android:drawablePadding="5dp"
+                        android:gravity="left|center"
+                        android:text="@string/use_my_location"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/text_14"></TextView>
+
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="@string/landmark"
+                    android:textColor="@color/dark_black_color"
+                    android:textSize="@dimen/text_18"></TextView>
+
+                <EditText
+                    android:id="@+id/edt_landmark"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edittext_style"
+                    android:fontFamily="@font/gelion_regular"
+                    android:hint="@string/enter"
+                    android:inputType="textCapWords"></EditText>
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/gelion_regular"
+                    android:inputType="textCapWords"
+                    android:text="@string/address1"
+                    android:textColor="@color/dark_black_color"
+                    android:textSize="@dimen/text_18"></TextView>
+
+                <EditText
+                    android:id="@+id/edt_address1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edittext_style"
+                    android:fontFamily="@font/gelion_regular"
+                    android:hint="@string/enter"
+                    android:inputType="textCapWords"></EditText>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/gelion_regular"
+                    android:inputType="textCapWords"
+                    android:text="@string/city"
+                    android:textColor="@color/dark_black_color"
+                    android:textSize="@dimen/text_18"></TextView>
+
+                <EditText
+                    android:id="@+id/edt_city"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edittext_style"
+                    android:fontFamily="@font/gelion_regular"
+                    android:hint="@string/enter"
+                    android:inputType="textCapWords"></EditText>
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/gelion_regular"
+                    android:inputType="textCapWords"
+                    android:text="@string/state"
+                    android:textColor="@color/dark_black_color"
+                    android:textSize="@dimen/text_18"></TextView>
+
+                <EditText
+                    android:id="@+id/edt_state"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edittext_style"
+                    android:fontFamily="@font/gelion_regular"
+                    android:hint="@string/enter"
+                    android:inputType="textCapWords"></EditText>
+
+                <TextView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/gelion_regular"
+                    android:text="@string/address2"
+                    android:textColor="@color/dark_black_color"
+                    android:textSize="@dimen/text_18"></TextView>
+
+                <EditText
+                    android:id="@+id/edt_address2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edittext_style"
+                    android:fontFamily="@font/gelion_regular"
+                    android:hint="@string/enter"
+                    android:inputType="textCapWords"></EditText>
+
+
+                <Button
+                    android:id="@+id/btn_update"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/button_style_animation"
+                    android:fontFamily="@font/gelion_medium"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:text="@string/update"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white_color"
+                    android:textSize="@dimen/text_18">
+
+                </Button>
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

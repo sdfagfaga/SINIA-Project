@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white_color"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:orientation="vertical">
+
+
+        <RelativeLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize">
+
+            <ImageView
+                android:id="@+id/ic_logo"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_action_bar_log"></ImageView>
+
+            <TextView
+                android:id="@+id/txt_stall_14"
+                android:textSize="@dimen/text_18"
+                android:textColor="@color/colorPrimaryDark"
+                android:fontFamily="@font/gelion_medium"
+                android:layout_centerInParent="true"
+                android:text="@string/stall_14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+            </TextView>
+
+
+            <include
+                android:id="@+id/ic_notification_layout"
+                layout="@layout/notification_baged_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/ic_cart_layout">
+
+            </include>
+
+
+            <include
+                android:id="@+id/ic_cart_layout"
+                layout="@layout/cart_baged_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp">
+
+            </include>
+
+
+        </RelativeLayout>
+
+        <EditText
+            android:imeOptions="actionDone|actionGo"
+            android:maxLines="1"
+            android:inputType="text"
+            android:id="@+id/edt_search"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@drawable/edittext_style"
+            android:drawableLeft="@drawable/ic_search"
+            android:drawablePadding="10dp"
+            android:hint="@string/search_hint">
+
+        </EditText>
+
+    </LinearLayout>
+
+</LinearLayout>

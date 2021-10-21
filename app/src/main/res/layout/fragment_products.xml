@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color"
+    android:orientation="vertical">
+
+
+    <include
+        layout="@layout/custom_action_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </include>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/img_filter"
+            android:gravity="center"
+            android:weightSum="7">
+
+            <TextView
+                android:fontFamily="@font/gelion_regular"
+                android:background="@drawable/text_filled_selected"
+                android:id="@+id/txt_all"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/all"
+                android:textAllCaps="false"
+                android:textColor="@color/dark_black_color"
+                android:textSize="@dimen/text_16" />
+
+            <TextView
+                android:fontFamily="@font/gelion_regular"
+
+                android:id="@+id/txt_grains"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/grains"
+                android:textAllCaps="false"
+                android:textColor="@color/dark_black_color"
+                android:textSize="@dimen/text_16" />
+
+            <TextView
+                android:fontFamily="@font/gelion_regular"
+
+                android:id="@+id/txt_fish"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Fish"
+                android:textAllCaps="false"
+                android:textColor="@color/dark_black_color"
+                android:textSize="@dimen/text_16" />
+
+            <TextView
+                android:id="@+id/txt_herbs"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Herbs"
+                android:textAllCaps="false"
+                android:textColor="@color/dark_black_color"
+                android:textSize="@dimen/text_16" />
+
+            <TextView
+                android:fontFamily="@font/gelion_regular"
+
+                android:id="@+id/txt_veg"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Veget"
+                android:textAllCaps="false"
+                android:textColor="@color/dark_black_color"
+                android:textSize="@dimen/text_16" />
+
+            <TextView
+                android:fontFamily="@font/gelion_regular"
+
+                android:id="@+id/txt_fruits"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Fruits"
+                android:textAllCaps="false"
+                android:textColor="@color/dark_black_color"
+                android:textSize="@dimen/text_16" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/img_filter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/ic_filter"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_products"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="15dp"
+            android:nestedScrollingEnabled="false" />
+
+        <TextView
+            android:id="@+id/txt_no_products"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:fontFamily="@font/gelion_regular"
+            android:gravity="center"
+            android:text="No Products available"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/text_24"
+            android:visibility="gone">
+
+        </TextView>
+
+    </RelativeLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    android:orientation="vertical"
+    card_view:cardCornerRadius="5dp"
+    card_view:cardUseCompatPadding="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="2dp">
+
+        <ImageView
+            android:id="@+id/img_product"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_gallery"></ImageView>
+
+        <TextView
+            android:id="@+id/txt_product_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/gelion_medium"
+            android:gravity="left"
+            android:text="Rice"
+            android:textColor="@color/dark_black_color"
+            android:textSize="@dimen/text_18">
+
+        </TextView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/txt_product_cost"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/gelion_regular"
+                android:text="R 50"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/text_18">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/txt_product_number"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:fontFamily="@font/gelion_thin"
+                android:gravity="center"
+                android:maxLines="2"
+                android:text="(Box - 50 nos)"
+                android:textSize="@dimen/text_14">
+
+            </TextView>
+
+
+        </LinearLayout>
+
+        <TextView
+            android:fontFamily="@font/gelion_regular"
+            android:id="@+id/txt_product_type"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="Type : Banginapalli"
+            android:textColor="@color/dark_black_color"
+            android:textSize="@dimen/text_14">
+
+        </TextView>
+
+        <TextView
+            android:fontFamily="@font/gelion_regular"
+            android:id="@+id/txt_minm_qty"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Min Qty : 100 Boxes"
+            android:textColor="@color/dark_black_color"
+            android:textSize="@dimen/text_14">
+
+        </TextView>
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

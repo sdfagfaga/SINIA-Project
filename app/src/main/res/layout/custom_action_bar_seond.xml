@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize">
+        <include
+
+            android:layout_toLeftOf="@+id/ic_cart_layout"
+            android:layout_centerVertical="true"
+            android:id="@+id/ic_notification_layout"
+            layout="@layout/notification_baged_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        </include>
+
+
+
+
+        <include
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_centerVertical="true"
+            android:id="@+id/ic_cart_layout"
+            android:layout_alignParentEnd="true"
+            layout="@layout/cart_baged_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        </include>
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>

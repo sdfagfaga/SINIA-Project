@@ -1,0 +1,91 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 29
+    buildToolsVersion "29.0.2"
+
+    defaultConfig {
+        applicationId "com.sinnia"
+        minSdkVersion 23
+        targetSdkVersion 29
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    useLibrary 'org.apache.http.legacy'
+
+    lintOptions {
+        checkReleaseBuilds false
+    }
+
+
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+
+    implementation 'androidx.appcompat:appcompat:1.2.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.2'
+    implementation 'com.google.android.material:material:1.0.0'
+
+    /*to get country code */
+    implementation 'com.hbb20:ccp:2.1.2'
+
+    /*Verify OTP Pin view*/
+    implementation 'com.chaos.view:pinview:1.4.3'
+
+    /*Circle Image*/
+    implementation 'de.hdodenhof:circleimageview:2.2.0'
+
+    implementation 'com.squareup.okhttp:okhttp:2.4.0'
+
+    /*multipart image sending */
+    implementation('org.apache.httpcomponents:httpmime:4.3.6') {
+        exclude module: 'httpclient'
+    }
+    implementation 'org.apache.httpcomponents:httpclient-android:4.3.5'
+
+    /*Gosn */
+    implementation 'com.google.code.gson:gson:2.8.5'
+
+    /*Location*/
+    implementation 'com.google.android.gms:play-services-auth:11.8.0'
+    implementation 'com.google.android.gms:play-services-places:17.0.0'
+    implementation 'com.google.android.gms:play-services-location:18.0.0'
+
+    /*Load Image*/
+    implementation 'com.squareup.picasso:picasso:2.5.2'
+
+    /*multipart image sending */
+    implementation('org.apache.httpcomponents:httpmime:4.3.6') {
+        exclude module: 'httpclient'
+    }
+    implementation 'org.apache.httpcomponents:httpclient-android:4.3.5'
+
+
+    //You have to add this line
+    implementation 'com.paypal.sdk:paypal-android-sdk:2.15.3'
+
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
+
+    /*material design for bottom sheet
+    * */
+    implementation 'com.google.android.material:material:1.1.0'
+
+    /*get current version  from play store*/
+    implementation 'org.jsoup:jsoup:1.8.3'
+
+
+
+}

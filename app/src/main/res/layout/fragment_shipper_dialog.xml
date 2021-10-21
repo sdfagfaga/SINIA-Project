@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="16dp"
+    android:layout_marginRight="16dp"
+    android:background="@drawable/dailog_background"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/gelion_regular"
+        android:gravity="center"
+        android:text="Add Shipper"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/text_30" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="4dp">
+
+        <Spinner
+            android:id="@+id/spn_country"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/spinner_style"
+            android:entries="@array/countries_name"
+            android:fontFamily="@font/gelion_regular"
+            android:popupBackground="@drawable/spinner_down_style"
+            android:textColor="@color/dark_black_color"
+            android:textSize="@dimen/text_16"></Spinner>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:src="@drawable/ic_grey_dropdown" />
+
+    </RelativeLayout>
+
+
+    <EditText
+        android:id="@+id/edt_full_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/edittext_style"
+        android:fontFamily="@font/gelion_regular"
+        android:hint="Name"
+        android:inputType="textCapWords"></EditText>
+
+
+    <EditText
+        android:id="@+id/link"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/edittext_style"
+        android:fontFamily="@font/gelion_regular"
+        android:hint="Website link"
+        android:inputType="text"></EditText>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:weightSum="4">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <EditText
+                android:id="@+id/edt_pincode"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="@drawable/edittext_style"
+                android:hint="EnterPin code"
+                android:textColor="@color/dark_black_color"
+                android:textSize="@dimen/text_18"></EditText>
+
+            <TextView
+                android:id="@+id/txt_use_my_location"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="@drawable/button_style_animation"
+                android:drawableLeft="@drawable/ic_location"
+                android:gravity="center"
+                android:paddingLeft="10dp"
+                android:text="My Location"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/text_14"></TextView>
+
+
+        </LinearLayout>
+
+
+        <EditText
+            android:id="@+id/edt_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edittext_style"
+            android:fontFamily="@font/gelion_regular"
+            android:hint="Enter Address"
+            android:inputType="textCapWords"></EditText>
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/btns_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <Button
+            android:id="@+id/btn_add"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/button_style_animation"
+            android:text="@string/add"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white" />
+
+        <Button
+            android:id="@+id/btn_cancel"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/button_style_animation"
+            android:text="@string/cancel"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white" />
+    </LinearLayout>
+
+</LinearLayout>

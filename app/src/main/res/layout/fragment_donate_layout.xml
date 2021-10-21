@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/arrow_action_layout"
+        layout="@layout/custom_action_with_arrow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </include>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white"
+        android:orientation="vertical">
+
+        <TextView
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:fontFamily="@font/gelion_medium"
+            android:gravity="center"
+            android:text="Donate Farmers for charity"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/text_30" />
+
+
+        <EditText
+            android:id="@+id/edt_donate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:background="@drawable/edittext_style"
+            android:fontFamily="@font/gelion_regular"
+            android:hint="Enter amount"
+            android:inputType="number"></EditText>
+
+        <Button
+            android:id="@+id/btn_donate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/button_selected"
+            android:fontFamily="@font/gelion_regular"
+            android:text="@string/donate"
+            android:textAllCaps="false"
+            android:textColor="@color/white_color" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:fontFamily="@font/gelion_medium"
+            android:gravity="center"
+            android:text="@string/donate_string"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/text_30" />
+
+    </LinearLayout>
+</LinearLayout>
